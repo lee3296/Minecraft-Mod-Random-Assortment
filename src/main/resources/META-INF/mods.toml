@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="MIT"
+[[mods]]
+modId="mymod"
+version="${file.jarVersion}"
+displayName="Random Assortment Mod "
+logoFile="examplemod.png"
+credits="Learning mod by Joseph Lee"
+authors="JosephLee"
+description='''
+A mod for the creator to learn modding.
+'''
+
+[[dependencies.mymod]] 
+    modId="forge"
+    mandatory=true
+    versionRange="[40,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.mymod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"
