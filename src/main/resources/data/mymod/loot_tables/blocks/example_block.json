@@ -1,0 +1,15 @@
+{
+	"type": "minecraft: block",
+	"pools": [ 
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "minecrfat:item",
+					"name": "mymod:example_block"
+				}
+			]
+		}
+	]
+
+}
