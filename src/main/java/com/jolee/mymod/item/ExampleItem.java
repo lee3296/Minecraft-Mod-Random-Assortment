@@ -5,6 +5,7 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 
 public class ExampleItem extends Item{
@@ -27,6 +28,15 @@ public class ExampleItem extends Item{
 		
 		return super.use(world, player, hand);
 	}
+	
+	/*
+	@Override
+	public int getBurnTime(ItemStack itemStack, RecipeType<?> recipeType) {
+		//makes the item burnable
+		//makes item a fuel. Ex: coal
+		return 1000; //1000 ticks is 1000 / 20 seconds = 50 seconds burntime
+	}
+	*/
 	
 	/*
 	@Override

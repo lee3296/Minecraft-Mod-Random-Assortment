@@ -4,6 +4,7 @@ import com.jolee.mymod.MyMod;
 import com.jolee.mymod.item.ExampleItem;
 import com.google.common.base.Supplier;
 
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraftforge.event.RegistryEvent.Register;
@@ -22,12 +23,18 @@ public class ItemInit {
 	public static final RegistryObject<Item> EXAMPLE_ITEM = register("example_item",
 			() -> new ExampleItem(new Item.Properties().tab(MyMod.TUTORIAL_TAB)));
 	
+	//get the block example_block in item form
+	//public static final RegistryObject<Item> EXAMPLE_BLOCK_ITEM = ITEMS.register("example_block",
+			//() -> new BlockItem(BlockInit.EXAMPLE_BLOCK.get(), new Item.Properties().tab(MyMod.TUTORIAL_TAB)));
+	
 	//create ruby item in the tutorial_tab creative tab
 	public static final RegistryObject<Item> RUBY = register("ruby", () -> new Item(new Item.Properties().tab(MyMod.TUTORIAL_TAB).rarity(Rarity.EPIC)));
 	//create citrine item
 	public static final RegistryObject<Item> CITRINE = register("citrine", () -> new Item(new Item.Properties().tab(MyMod.TUTORIAL_TAB).rarity(Rarity.EPIC)));
 	//create exquisite_sapphire item
 	public static final RegistryObject<Item> EXQUISITE_SAPPHIRE = register("exquisite_sapphire", () -> new Item(new Item.Properties().tab(MyMod.TUTORIAL_TAB).rarity(Rarity.EPIC)));
+    //create ruby sword
+	
 
 	
 	
