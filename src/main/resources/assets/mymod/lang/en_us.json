@@ -1,6 +1,8 @@
 {
 	"item.mymod.example_item": "Example Item",
 	"item.mymod.ruby": "Ruby",
+	"item.mymod.citrine": "Citrine",
+	"item.mymod.exquisite_sapphire": "Exquisite Sapphire",
 	"itemGroup.mymod": "MyMod Testing Tab",
 	"block.mymod.example_block": "Example Block"
 }

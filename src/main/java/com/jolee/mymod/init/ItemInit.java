@@ -21,6 +21,12 @@ public class ItemInit {
 	
 	//create ruby item in the tutorial_tab creative tab
 	public static final RegistryObject<Item> RUBY = register("ruby", () -> new Item(new Item.Properties().tab(MyMod.TUTORIAL_TAB)));
+	//create citrine item
+	public static final RegistryObject<Item> CITRINE = register("citrine", () -> new Item(new Item.Properties().tab(MyMod.TUTORIAL_TAB)));
+	//create exquisite_sapphire item
+	public static final RegistryObject<Item> EXQUISITE_SAPPHIRE = register("exquisite_sapphire", () -> new Item(new Item.Properties().tab(MyMod.TUTORIAL_TAB)));
+
+	
 	
 	private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
 		return ITEMS.register(name, item);
