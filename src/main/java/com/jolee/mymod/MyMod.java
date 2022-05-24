@@ -26,6 +26,7 @@ public class MyMod {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack makeIcon() {
+			//make the creative tab have the icon of the EXAMPLE_ITEM item
 			return new ItemStack(ItemInit.EXAMPLE_ITEM.get());
 		}
 	};

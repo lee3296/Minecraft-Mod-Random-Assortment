@@ -32,6 +32,11 @@ public class BlockInit {
 	       () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_PURPLE).strength(3.0f).sound(SoundType.METAL).requiresCorrectToolForDrops()),
 	       object -> () -> new BlockItem(object.get() ,new Item.Properties().tab(MyMod.TUTORIAL_TAB)));
 	
+	//create exquisite sapphire ore
+	public static final RegistryObject<Block> EXQUISITE_SAPPHIRE_ORE = register("exquisite_sapphire_ore",
+		       () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BLUE).strength(3.0f).sound(SoundType.STONE).requiresCorrectToolForDrops()),
+		       object -> () -> new BlockItem(object.get() ,new Item.Properties().tab(MyMod.TUTORIAL_TAB)));
+	
 	//register the block
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block) {

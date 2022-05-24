@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"mymod:example_block"
+		"mymod:example_block",
+		"mymod:exquisite_sapphire_ore"
 	]
 }
