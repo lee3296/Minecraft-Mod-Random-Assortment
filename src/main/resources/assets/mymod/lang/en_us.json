@@ -1,5 +1,6 @@
 {
 	"item.mymod.example_item": "Example Item",
+	"item.mymod.ruby": "Ruby",
 	"itemGroup.mymod": "MyMod Testing Tab",
 	"block.mymod.example_block": "Example Block"
 }

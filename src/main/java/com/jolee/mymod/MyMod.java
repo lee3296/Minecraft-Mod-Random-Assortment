@@ -19,7 +19,7 @@ public class MyMod {
 	
 	public static final String MOD_ID = "mymod";
 	
-	//The creative tab ID
+	//The creative tab ID for items and blocks
 	
 	public static final CreativeModeTab TUTORIAL_TAB = new CreativeModeTab(MOD_ID) {
 		
@@ -32,8 +32,8 @@ public class MyMod {
 	
 	/*
 	
-	//The creative tab for blocks
-    public static final CreativeModeTab TUTORIAL_BLOCKS = new CreativeModeTab(MOD_ID + "_blocks") {
+	//The creative tab for tools
+    public static final CreativeModeTab TUTORIAL_BLOCKS = new CreativeModeTab(MOD_ID + "_tools") {
 		
 		@Override
 		@OnlyIn(Dist.CLIENT)
