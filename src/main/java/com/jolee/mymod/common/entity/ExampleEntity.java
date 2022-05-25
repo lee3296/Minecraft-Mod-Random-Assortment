@@ -38,9 +38,6 @@ public class ExampleEntity extends Animal {
 		//method is used for AI behavior of entity
 		//can add more from the vanilla class of a mob in Minecraft
 		
-		super.registerGoals();
-		
-		
 		//same AI as pig below
 		//except tempt goal is a custom item example_item
 		this.goalSelector.addGoal(0, new FloatGoal(this));

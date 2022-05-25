@@ -5,5 +5,6 @@
 	"item.mymod.exquisite_sapphire": "Exquisite Sapphire",
 	"itemGroup.mymod": "MyMod Testing Tab",
 	"block.mymod.example_block": "Example Block",
-	"block.mymod.equisite_sapphire_ore": "Exquisite Sapphire Ore"
+	"block.mymod.equisite_sapphire_ore": "Exquisite Sapphire Ore",
+	"entity.mymod.example_entity": "Mud Frog"
 }
