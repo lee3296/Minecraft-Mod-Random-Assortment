@@ -1,6 +1,7 @@
 package com.jolee.mymod;
 
 import com.jolee.mymod.init.BlockInit;
+import com.jolee.mymod.init.EntityInit;
 import com.jolee.mymod.init.ItemInit;
 
 import net.minecraft.world.item.CreativeModeTab;
@@ -51,7 +52,7 @@ public class MyMod {
 		
 		ItemInit.ITEMS.register(bus);
 		BlockInit.BLOCKS.register(bus);
-		
+		EntityInit.ENTITIES.register(bus);
 		//register the event with this class.
 		MinecraftForge.EVENT_BUS.register(this);
 	}
