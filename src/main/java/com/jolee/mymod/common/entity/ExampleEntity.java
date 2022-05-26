@@ -39,6 +39,7 @@ public class ExampleEntity extends Animal {
 		//can add more from the vanilla class of a mob in Minecraft
 		
 		//same AI as pig below
+		//add animation using blockbench
 		//except tempt goal is a custom item example_item
 		this.goalSelector.addGoal(0, new FloatGoal(this));
 		this.goalSelector.addGoal(1,  new PanicGoal(this, 1.25D));
