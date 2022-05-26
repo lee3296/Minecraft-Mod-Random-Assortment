@@ -3,3 +3,4 @@ This is a Minecraft that will have random items, crafting recipes, entities, etc
 
 Created using Java and Minecraft Forge.
 This was created with 1.18.2 version of Minecraft. Works up to 1.19 version
+I am using BlockBench for my 3d models of entities, armor, etc. I literally have no experience in graphic design so they will look really bad.
