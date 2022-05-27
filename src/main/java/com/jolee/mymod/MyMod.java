@@ -3,6 +3,7 @@ package com.jolee.mymod;
 import com.jolee.mymod.init.BlockInit;
 import com.jolee.mymod.init.EntityInit;
 import com.jolee.mymod.init.ItemInit;
+import com.jolee.mymod.init.SoundInit;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -50,6 +51,7 @@ public class MyMod {
 	public MyMod() {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		
+		SoundInit.SOUNDS.register(bus);
 		ItemInit.ITEMS.register(bus);
 		BlockInit.BLOCKS.register(bus);
 		EntityInit.ENTITIES.register(bus);

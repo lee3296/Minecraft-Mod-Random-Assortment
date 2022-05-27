@@ -5,8 +5,10 @@ import com.jolee.mymod.item.ExampleItem;
 import com.google.common.base.Supplier;
 
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.event.RegistryEvent.Register;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -33,7 +35,14 @@ public class ItemInit {
 	public static final RegistryObject<Item> CITRINE = register("citrine", () -> new Item(new Item.Properties().tab(MyMod.TUTORIAL_TAB).rarity(Rarity.EPIC)));
 	//create exquisite_sapphire item
 	public static final RegistryObject<Item> EXQUISITE_SAPPHIRE = register("exquisite_sapphire", () -> new Item(new Item.Properties().tab(MyMod.TUTORIAL_TAB).rarity(Rarity.EPIC)));
-    //create ruby sword
+    //TODO: create ruby tools and armor
+	
+	//create spawn egg for example_entity AKA Mud Frog
+	//hexadeciaml fields are first and secondary colors of the spawn egg item
+	public static final RegistryObject<ForgeSpawnEggItem> EXAMPLE_ENTITY_SPAWN_EGG =
+			ITEMS.register("example_entity_spawn_egg",
+					() -> new ForgeSpawnEggItem(EntityInit.EXAMPLE_ENTITY, 0xa87f32, 0x89a832, new Item.Properties().tab(MyMod.TUTORIAL_TAB)
+							.tab(CreativeModeTab.TAB_MISC).stacksTo(64)));
 	
 
 	

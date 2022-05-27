@@ -1,0 +1,17 @@
+{
+	"entity.example_entity.ambient": {
+		"sounds": [
+			"mymod:example_entity_ambient"
+		]
+	}, 
+	"entity.example_entity.hurt": {
+		"sounds": [
+			"mymod:example_entity_hurt"
+		]
+	},
+	"entity.example_entity.death": {
+		"sounds": [
+			"mymod:example_entity_death"
+		]
+	}
+}
