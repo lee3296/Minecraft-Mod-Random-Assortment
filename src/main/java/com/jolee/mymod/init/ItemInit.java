@@ -1,6 +1,7 @@
 package com.jolee.mymod.init;
 
 import com.jolee.mymod.MyMod;
+import com.jolee.mymod.item.ClickerItem;
 import com.jolee.mymod.item.ExampleItem;
 import com.google.common.base.Supplier;
 
@@ -35,7 +36,13 @@ public class ItemInit {
 	public static final RegistryObject<Item> CITRINE = register("citrine", () -> new Item(new Item.Properties().tab(MyMod.TUTORIAL_TAB).rarity(Rarity.EPIC)));
 	//create exquisite_sapphire item
 	public static final RegistryObject<Item> EXQUISITE_SAPPHIRE = register("exquisite_sapphire", () -> new Item(new Item.Properties().tab(MyMod.TUTORIAL_TAB).rarity(Rarity.EPIC)));
-    //TODO: create ruby tools and armor
+    
+	//create advanced item. destroys item when used and comes back when used again
+	public static final RegistryObject<ClickerItem> CLICKER = 
+			ITEMS.register("clicker", () -> new ClickerItem(new Item.Properties().tab(MyMod.TUTORIAL_TAB).rarity(Rarity.EPIC)));
+
+	
+	//TODO: create ruby tools and armor
 	
 	//create spawn egg for example_entity AKA Mud Frog
 	//hexadeciaml fields are first and secondary colors of the spawn egg item
