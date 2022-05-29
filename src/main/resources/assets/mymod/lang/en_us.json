@@ -8,5 +8,6 @@
 	"block.mymod.equisite_sapphire_ore": "Exquisite Sapphire Ore",
 	"entity.mymod.example_entity": "Mud Frog",
 	"item.mymod.example_entity_spawn_egg": "Spawn Mud Frog",
-	"item.mymod.clicker": "Clicker"
+	"item.mymod.clicker": "Clicker",
+	"block.mymod.lightning_jumper": "Lightning Jumper"
 }

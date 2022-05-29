@@ -51,6 +51,10 @@ public class ItemInit {
 					() -> new ForgeSpawnEggItem(EntityInit.EXAMPLE_ENTITY, 0xa87f32, 0x89a832, new Item.Properties().tab(MyMod.TUTORIAL_TAB)
 							.tab(CreativeModeTab.TAB_MISC).stacksTo(64)));
 	
+	//create item for lightning jumper
+	public static final RegistryObject<Item> LIGHTNING_JUMPER_BLOCK_ITEM = ITEMS.register("lightning_jumper",
+			() -> new BlockItem(BlockInit.LIGHTNING_JUMPER.get(), new Item.Properties().tab(MyMod.TUTORIAL_TAB)));
+	
 
 	
 	

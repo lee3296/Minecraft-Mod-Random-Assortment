@@ -7,6 +7,7 @@ import javax.xml.xpath.XPathFunctionException;
 
 import com.google.common.base.Supplier;
 import com.jolee.mymod.MyMod;
+import com.jolee.mymod.common.block.LightningJumperBlock;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -36,6 +37,11 @@ public class BlockInit {
 	public static final RegistryObject<Block> EXQUISITE_SAPPHIRE_ORE = register("exquisite_sapphire_ore",
 		       () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BLUE).strength(3.0f).sound(SoundType.STONE).requiresCorrectToolForDrops()),
 		       object -> () -> new BlockItem(object.get() ,new Item.Properties().tab(MyMod.TUTORIAL_TAB)));
+	
+	//create advanced block
+	public static final RegistryObject<LightningJumperBlock> LIGHTNING_JUMPER = BLOCKS.register("lightning_jumper",
+            () -> new LightningJumperBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.TERRACOTTA_ORANGE)
+                    .strength(8.0f, 30f).requiresCorrectToolForDrops().noOcclusion().dynamicShape()));
 	
 	//register the block
 	
