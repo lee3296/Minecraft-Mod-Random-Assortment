@@ -41,6 +41,9 @@ public class ItemInit {
 	public static final RegistryObject<ClickerItem> CLICKER = 
 			ITEMS.register("clicker", () -> new ClickerItem(new Item.Properties().tab(MyMod.TUTORIAL_TAB).rarity(Rarity.EPIC)));
 
+	//toilet item
+	public static final RegistryObject<BlockItem> TOILET_ITEM = ITEMS.register("toilet",
+            () -> new BlockItem(BlockInit.TOILET.get(), new Item.Properties().tab(MyMod.TUTORIAL_TAB)));
 	
 	//TODO: create ruby tools and armor
 	

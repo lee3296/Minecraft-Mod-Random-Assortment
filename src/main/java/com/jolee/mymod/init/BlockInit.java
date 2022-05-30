@@ -8,10 +8,12 @@ import javax.xml.xpath.XPathFunctionException;
 import com.google.common.base.Supplier;
 import com.jolee.mymod.MyMod;
 import com.jolee.mymod.common.block.LightningJumperBlock;
+import com.jolee.mymod.common.block.ToiletBlock;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -42,6 +44,11 @@ public class BlockInit {
 	public static final RegistryObject<LightningJumperBlock> LIGHTNING_JUMPER = BLOCKS.register("lightning_jumper",
             () -> new LightningJumperBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.TERRACOTTA_ORANGE)
                     .strength(8.0f, 30f).requiresCorrectToolForDrops().noOcclusion().dynamicShape()));
+	
+	//entity block toilet
+	public static final RegistryObject<ToiletBlock> TOILET = BLOCKS.register("toilet",
+            () -> new ToiletBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).noOcclusion().dynamicShape()));
+	
 	
 	//register the block
 	

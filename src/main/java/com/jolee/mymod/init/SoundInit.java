@@ -31,6 +31,10 @@ public final class SoundInit {
 			SOUNDS.register("entity.example_entity.death",
 					() -> new SoundEvent(new ResourceLocation(MyMod.MOD_ID, "entity.example_entity.death")));
 	
+	//toilet sound
+	public static final RegistryObject<SoundEvent> FART = SOUNDS.register("block.toilet.fart",
+            () -> new SoundEvent(new ResourceLocation(MyMod.MOD_ID, "block.toilet.fart")));
+	
 	public SoundInit() {
 		
 	}
