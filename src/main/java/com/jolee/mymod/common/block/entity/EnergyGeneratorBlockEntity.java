@@ -1,11 +1,9 @@
 package com.jolee.mymod.common.block.entity;
 
 import com.jolee.mymod.MyMod;
+import com.jolee.mymod.common.block.entity.util.*;
+import com.jolee.mymod.init.BlockEntityInit;
 
-import io.github.darealturtywurty.tutorialmod.TutorialMod;
-import io.github.darealturtywurty.tutorialmod.common.block.entity.util.CustomEnergyStorage;
-import io.github.darealturtywurty.tutorialmod.common.block.entity.util.InventoryBlockEntity;
-import io.github.darealturtywurty.tutorialmod.core.init.BlockEntityInit;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -25,7 +23,7 @@ import net.minecraftforge.energy.CapabilityEnergy;
 public class EnergyGeneratorBlockEntity extends InventoryBlockEntity
     implements BlockEntityTicker<EnergyGeneratorBlockEntity> {
     public static final Component TITLE = new TranslatableComponent(
-        "container." + TutorialMod.MODID + ".energy_generator");
+        "container." + MyMod.MOD_ID + ".energy_generator");
     
     public final CustomEnergyStorage energyStorage;
     
@@ -85,9 +83,9 @@ public class EnergyGeneratorBlockEntity extends InventoryBlockEntity
                     if (be != this && storage.getEnergyStored() < storage.getMaxEnergyStored()) {
                         final int toSend = EnergyGeneratorBlockEntity.this.energyStorage.extractEnergy(this.maxExtract,
                             false);
-                        TutorialMod.LOGGER.info("Send: {}", toSend);
+                        MyMod.LOGGER.info("Send: {}", toSend);
                         final int received = storage.receiveEnergy(toSend, false);
-                        TutorialMod.LOGGER.info("Final Received: {}", received);
+                        MyMod.LOGGER.info("Final Received: {}", received);
 
                         EnergyGeneratorBlockEntity.this.energyStorage.setEnergy(
                             EnergyGeneratorBlockEntity.this.energyStorage.getEnergyStored() + toSend - received);

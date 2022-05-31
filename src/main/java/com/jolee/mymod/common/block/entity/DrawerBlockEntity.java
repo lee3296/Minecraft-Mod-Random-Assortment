@@ -1,7 +1,8 @@
 package com.jolee.mymod.common.block.entity;
 
-import io.github.darealturtywurty.tutorialmod.common.block.entity.util.InventoryBlockEntity;
-import io.github.darealturtywurty.tutorialmod.core.init.BlockEntityInit;
+import com.jolee.mymod.common.block.entity.util.*;
+import com.jolee.mymod.init.BlockEntityInit;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;

@@ -1,10 +1,11 @@
 package com.jolee.mymod.common.block.entity;
 
-import io.github.darealturtywurty.tutorialmod.TutorialMod;
-import io.github.darealturtywurty.tutorialmod.common.block.entity.util.CustomEnergyStorage;
-import io.github.darealturtywurty.tutorialmod.core.init.BlockEntityInit;
-import io.github.darealturtywurty.tutorialmod.core.init.PacketHandler;
-import io.github.darealturtywurty.tutorialmod.core.network.ClientboundUpdateEnergyStorageScreenPacket;
+import com.jolee.mymod.MyMod;
+import com.jolee.mymod.common.block.entity.util.CustomEnergyStorage;
+import com.jolee.mymod.init.BlockEntityInit;
+import com.jolee.mymod.init.PacketHandler;
+import com.jolee.mymod.network.ClientboundUpdateEnergyStorageScreenPacket;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -100,7 +101,7 @@ public class EnergyStorageBlockEntity extends BlockEntity implements BlockEntity
         return new CustomEnergyStorage(this, this.capacity, this.maxReceive, this.maxExtract, 0) {
             @Override
             public int extractEnergy(int maxExtract, boolean simulate) {
-                final int e = super.extractEnergy(maxExtrSact, simulate);
+                final int e = super.extractEnergy(maxExtract, simulate);
                 PacketHandler.INSTANCE.send(PacketDistributor.ALL.noArg(),
                     new ClientboundUpdateEnergyStorageScreenPacket(this.energy));
                 return e;
@@ -111,8 +112,8 @@ public class EnergyStorageBlockEntity extends BlockEntity implements BlockEntity
                 final int e = super.receiveEnergy(maxReceive, simulate);
                 PacketHandler.INSTANCE.send(PacketDistributor.ALL.noArg(),
                     new ClientboundUpdateEnergyStorageScreenPacket(this.energy));
-                TutorialMod.LOGGER.info("Received: {}", e);
-                TutorialMod.LOGGER.info("Current: {}", this.energy);
+                MyMod.LOGGER.info("Received: {}", e);
+                MyMod.LOGGER.info("Current: {}", this.energy);
                 return e;
             }
         };
