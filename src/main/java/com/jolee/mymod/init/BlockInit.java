@@ -7,7 +7,13 @@ import javax.xml.xpath.XPathFunctionException;
 
 import com.google.common.base.Supplier;
 import com.jolee.mymod.MyMod;
+import com.jolee.mymod.common.block.DisplayHandBlock;
+import com.jolee.mymod.common.block.DrawerBlock;
+import com.jolee.mymod.common.block.EnergyGeneratorBlock;
+import com.jolee.mymod.common.block.EnergyStorageBlock;
+import com.jolee.mymod.common.block.ExampleChestBlock;
 import com.jolee.mymod.common.block.LightningJumperBlock;
+import com.jolee.mymod.common.block.PoopStorageBlock;
 import com.jolee.mymod.common.block.ToiletBlock;
 
 import net.minecraft.world.item.BlockItem;
@@ -48,6 +54,24 @@ public class BlockInit {
 	//entity block toilet
 	public static final RegistryObject<ToiletBlock> TOILET = BLOCKS.register("toilet",
             () -> new ToiletBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).noOcclusion().dynamicShape()));
+	
+	public static final RegistryObject<DrawerBlock> DRAWER = BLOCKS.register("drawer",
+	        () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+	    
+	public static final RegistryObject<ExampleChestBlock> EXAMPLE_CHEST = BLOCKS.register("example_chest",
+	        () -> new ExampleChestBlock(BlockBehaviour.Properties.copy(BlockInit.EXAMPLE_BLOCK.get())));
+	    
+	public static final RegistryObject<PoopStorageBlock> POOP_STORAGE = BLOCKS.register("poop_storage",
+	        () -> new PoopStorageBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK)));
+	    
+	public static final RegistryObject<DisplayHandBlock> DISPLAY_HAND = BLOCKS.register("display_hand",
+	        () -> new DisplayHandBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+
+	public static final RegistryObject<EnergyStorageBlock> ENERGY_STORAGE = BLOCKS.register("energy_storage",
+	        () -> new EnergyStorageBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+	    
+	public static final RegistryObject<EnergyGeneratorBlock> ENERGY_GENERATOR = BLOCKS.register("energy_generator",
+	        () -> new EnergyGeneratorBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
 	
 	
 	//register the block
