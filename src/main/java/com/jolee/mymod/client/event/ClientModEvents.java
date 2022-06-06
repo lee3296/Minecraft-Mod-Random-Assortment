@@ -19,7 +19,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 public final class ClientModEvents {
 
 	private ClientModEvents() {
-		
+		//nothing goes here
 	}
 	
 	@SubscribeEvent
